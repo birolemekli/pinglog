@@ -43,5 +43,5 @@ try:
         dosya.write(ip_header.protocol+"  Target="+ip_header.ip_src+"  Source="+ip_header.ip_dst+"  Time="+zmn+"\n")
 except KeyboardInterrupt:
     if os.name == "nt":
-        sniffer.ioctl(socket.SIO_RCVALL, socket.RCVALL_OFF)
+        data.ioctl(socket.SIO_RCVALL, socket.RCVALL_OFF)
 sys.exit(0)
