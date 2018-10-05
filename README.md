@@ -1,0 +1,2 @@
+# pinglog
+Logging ping traffic
